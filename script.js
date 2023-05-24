@@ -1,6 +1,7 @@
-function threeSum(arr, target) {
-// write your code here
-	 
+function threeSum(nums, target) {
+  // Sort the array in ascending order
+  nums.sort((a, b) => a - b);
+ 
   let closestSum = Infinity;
  
   for (let i = 0; i < nums.length - 2; i++) {
@@ -29,7 +30,7 @@ function threeSum(arr, target) {
   }
  
   return closestSum;
-  
 }
-
+ 
+ 
 module.exports = threeSum;
